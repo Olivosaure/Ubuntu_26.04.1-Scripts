@@ -1,0 +1,6 @@
+# Commande pour connaitre l'espace utilisé du journalctl
+journalctl --disk-usage
+
+# Affichage de l'espace total réservé pour le journalctl
+# Réponse type : System Journal (/var/log/journal/2f.....) is 87.8M, max 2.9G, 2.8G free
+journalctl -b -u systemd-journald | tail -2
