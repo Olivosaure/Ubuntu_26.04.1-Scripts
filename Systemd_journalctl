@@ -13,4 +13,6 @@ sudo journalctl -b -p err -n 50
 echo -e "Affichage des 50 dernières erreurs et messages plus graves du démarrage actuel du plus récent au plus ancien"
 sudo journalctl -b -p err -n 50 -r
 
-
+# afficher les erreurs en direct live (pour arrêter, utiliser Ctrl+C)
+echo -e "Affichage des erreurs en direct live (pour arrêter, utiliser Ctrl+C) :"
+sudo journalctl -b -p err -f
