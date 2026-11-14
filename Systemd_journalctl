@@ -4,3 +4,13 @@ journalctl --disk-usage
 # Affichage de l'espace total réservé pour le journalctl
 # Réponse type : System Journal (/var/log/journal/2f.....) is 87.8M, max 2.9G, 2.8G free
 journalctl -b -u systemd-journald | tail -2
+
+# afficher les 50 dernières erreurs et messages plus graves du démarrage actuel
+echo -e "Affichage des 50 dernières erreurs et messages plus graves du démarrage actuel"
+sudo journalctl -b -p err -n 50
+
+# afficher les 50 dernières erreurs et messages plus graves du démarrage actuel du plus récent au plus ancien
+echo -e "Affichage des 50 dernières erreurs et messages plus graves du démarrage actuel du plus récent au plus ancien"
+sudo journalctl -b -p err -n 50 -r
+
+
