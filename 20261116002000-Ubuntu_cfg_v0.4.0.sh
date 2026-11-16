@@ -4,7 +4,7 @@
 #
 # v0.4.0 : 16/11/2026
 #  - Modifications et simplifcation du bandeau de description de lancement du script
-   - Ajout de l'étiquette PyCharm, même si pas développé en commentaires
+#  - Ajout de l'étiquette PyCharm, même si pas développé en commentaires
 #
 # v0.3.9 : 14/11/2026
 #  - 1er Contrôles du fonctionnement du script sous ubuntu 26.04.1 Resolute 
