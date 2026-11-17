@@ -2,6 +2,10 @@
 
 #################################################### MIS A JOUR LE 14/11/2026 #########################################################################################
 #
+#
+# v0.4.1 : 18/11/2026
+#  - Rajout de BalenaEtcher dans la lilste des install, sans avoir codé la fonction
+#
 # v0.4.0 : 16/11/2026
 #  - Modifications et simplifcation du bandeau de description de lancement du script
 #  - Ajout de l'étiquette PyCharm, même si pas développé en commentaires
@@ -299,7 +303,7 @@ done
 
 ##### VARIABLES GLOBALES NECESSAIRES POUR SCRIPT D'APPLI SOLO SEPARE (FIN) #####
 
-BASH_UBUNTU_25_10_CONFIGURATION_VERSION_SCRIPT="v0.3.9"
+BASH_UBUNTU_25_10_CONFIGURATION_VERSION_SCRIPT="v0.4.1"
 BASH_UBUNTU_25_10_CONFIGURATION_DATE_SCRIPT="14/11/2026"
 
 # Actuellement ne fait que vérifier le swap avec swpon --show
@@ -307,6 +311,7 @@ INSTALL_SWAP=true
 
 ##### CHOIX DES APPLICATIONS A INSTALLER #####
 INSTALL_ALL=false
+INSTALL_BALENAETCHER=false 			# Pas codé pour le moment, accès au deb sur le git https://github.com/balena-io/etcher/releases/. Ce logiciel est utile pour installer ubuntu (24.04, 25.10, 26.04...) sur une clé usb
 INSTALL_BLENDER=false
 INSTALL_BRAVE=false
 INSTALL_CENTRE_DE_MISSION=false
